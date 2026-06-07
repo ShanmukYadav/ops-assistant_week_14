@@ -1,0 +1,11 @@
+Title: Support Ticket #1103
+ID: doc_09
+
+Customer: Sneha Patel
+Order ID: ORD-1001
+Date: 2024-10-15
+Issue: Customer requested refund for ProSound X200 Headphones purchased on
+       2024-10-01. Item returned in original packaging, unused.
+Resolution: Refund of $89.99 approved and processed to original payment method.
+            Processing time: 6 business days.
+Status: Closed

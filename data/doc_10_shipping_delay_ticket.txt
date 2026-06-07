@@ -1,0 +1,12 @@
+Title: Support Ticket #1055
+ID: doc_10
+
+Customer: Vikram Shah
+Order ID: ORD-1010
+Date: 2024-10-28
+Issue: Customer reported order not received after 8 business days.
+       Standard shipping selected at checkout.
+Resolution: Investigated with warehouse A. Package was delayed due to
+            carrier backlog. Delivered on 2024-10-30.
+            Customer offered 10% discount on next order as goodwill gesture.
+Status: Closed

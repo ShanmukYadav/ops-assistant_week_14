@@ -1,0 +1,12 @@
+Title: Peak Season Operations Notice — Q4 2024
+ID: doc_12
+
+During the period November 1 to December 31 2024, the following changes
+apply to standard operations:
+- Standard shipping extended to 7-10 business days due to carrier volume.
+- Express shipping guaranteed within 3 business days (up from 2).
+- Return processing time extended to 10 business days.
+- Tier 2 escalation response time extended to 8 business hours.
+- Reorder thresholds for all products increased by 50% automatically.
+All customers placing orders during this period will receive an automated
+email informing them of extended timelines.

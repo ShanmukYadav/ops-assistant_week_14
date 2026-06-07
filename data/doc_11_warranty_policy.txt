@@ -1,0 +1,11 @@
+Title: Warranty Policy
+ID: doc_11
+
+All products carry a minimum warranty of 1 year from date of purchase.
+The MechType K80 Keyboard carries an extended warranty of 2 years.
+Warranty claims must be submitted within the warranty period with proof
+of purchase. Physical damage caused by misuse is not covered.
+Replacement units are dispatched within 3 business days of claim approval.
+Customers in warranty claim status retain their original order history.
+To submit a claim, email warranty@opsco.com with your order ID and a
+description of the fault.
