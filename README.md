@@ -1,54 +1,183 @@
-# Operations Assistant — Week 14 Mini-Project
+# 🤖 Ops Assistant — Week 14 Mini-Project
 
-A multi-agent CrewAI crew that answers business questions over local documents and records,
-using tools exposed by a local MCP server.
+### Futurense AI Clinic · Multi-Agent Operations Assistant
 
-## Stack
-- MCP server: FastMCP (official `mcp` SDK)
-- Agents: CrewAI with MCPServerAdapter over stdio
-- Model: Ollama (local, free) — default llama3.2
+<p align="center">
+  <img src="demo/demo.gif" width="800" alt="Ops Assistant Demo">
+</p>
 
-## Setup
+<p align="center">
+  <strong>A production-style AI Operations Assistant powered by MCP + CrewAI.</strong><br>
+  Search policies, analyze support tickets, inspect order records, and generate grounded reports with citations.
+</p>
 
-### 1. Clone and enter the repo
-git clone <your-repo-url>
-cd ops-assistant
+---
 
-### 2. Install dependencies
-pip install mcp crewai "crewai-tools[mcp]" python-dotenv pydantic
+## ✨ Highlights
 
-### 3. Pull the local model
-ollama pull llama3.2
+* 🔍 **Grounded Retrieval** — Answers are generated only from local documents and structured records
+* 🤖 **Multi-Agent Architecture** — Separate Researcher and Writer agents
+* 🧰 **Custom MCP Server** — Exposes business tools via the Model Context Protocol
+* 📝 **Automatic Report Generation** — Reports are saved as Markdown files
+* 🛡️ **Security First** — Pydantic validation prevents malformed inputs
+* 🧪 **Fully Tested** — Unit tests and end-to-end tests included
+* 📚 **Source Attribution** — Every claim includes document citations
 
-### 4. Copy env file
-cp .env.example .env
+---
 
-### 5. Run the MCP server (standalone, for Inspector testing)
-python server/server.py
+## 🏗️ System Architecture
 
-### 6. Run the crew
-python crew/crew.py
+```mermaid
+flowchart LR
 
-### 7. Run tests
-python -m pytest tests/
+    U[User Question]
 
-## Folder structure
+    subgraph CrewAI Crew
+        R[🔍 Researcher Agent]
+        W[📝 Writer Agent]
+    end
+
+    subgraph MCP Server
+        SD[search_documents]
+        RR[read_record]
+        SR[save_report]
+    end
+
+    subgraph Knowledge Base
+        DOCS[(8 Documents)]
+        CSV[(orders.csv)]
+    end
+
+    U --> R
+    R --> SD
+    R --> RR
+
+    SD --> DOCS
+    RR --> CSV
+
+    R --> W
+    W --> SR
+
+    SR --> OUT[Generated Reports]
+```
+
+---
+
+## 🚀 Why This Project?
+
+Operations teams often spend valuable time manually searching through:
+
+* Return policies
+* Shipping guidelines
+* Product notes
+* Support tickets
+* Inventory reports
+* Customer orders
+
+This assistant automates that workflow while ensuring **every answer is evidence-backed**.
+
+> If evidence cannot be found, the system explicitly states so instead of hallucinating.
+
+---
+
+## 🛠️ Tech Stack
+
+| Component             | Technology                 |
+| --------------------- | -------------------------- |
+| MCP Server            | FastMCP (Official MCP SDK) |
+| Multi-Agent Framework | CrewAI                     |
+| LLM Provider          | OpenRouter                 |
+| Model                 | Llama 3.1 8B Instruct      |
+| Validation            | Pydantic v2                |
+| Testing               | Pytest                     |
+| Language              | Python 3.11                |
+
+---
+
+## 📁 Project Structure
+
+```text
 ops-assistant/
-├── data/               # Sample documents (.txt) and records (.csv)
-├── server/             # MCP server (server.py)
-├── crew/               # CrewAI agents and tasks (crew.py)
-├── tests/              # Unit + end-to-end tests
-├── traces/             # Saved agent run traces
-├── outputs/            # Reports written by save_report tool
-├── demo/               # 5-minute demo clip or link
+├── data/                          # Sample knowledge base
+│   ├── doc_01_return_policy.txt
+│   ├── doc_02_shipping_policy.txt
+│   ├── doc_03_product_note_headphones.txt
+│   ├── doc_04_product_note_keyboard.txt
+│   ├── doc_05_support_ticket_1042.txt
+│   ├── doc_06_support_ticket_1087.txt
+│   ├── doc_07_escalation_policy.txt
+│   ├── doc_08_inventory_note.txt
+│   └── orders.csv
+│
+├── server/
+│   └── server.py
+│
+├── crew/
+│   └── crew.py
+│
+├── tests/
+│   ├── test_tools.py
+│   └── test_e2e.py
+│
+├── outputs/
+├── traces/
+├── demo/
 ├── .env.example
 ├── decision_log.md
-└── reflection.md
+├── reflection.md
+└── README.md
+```
 
-## Example questions
-See tests/ for three saved example runs with outputs and tool call logs.
+---
 
-## Security notes
-- No API keys committed — use .env (gitignored)
-- Tool inputs validated with Pydantic schemas
-- max_iter set on all agents to prevent runaway loops
+## 💡 Example Query
+
+```text
+What was the issue with order ORD-1042, how was it resolved,
+and is the product still in stock?
+```
+
+### Example Output
+
+```text
+✓ Identified audio dropout issue affecting firmware v1.2 [doc_05]
+✓ Resolution: Firmware updated to v1.3 [doc_05]
+✓ Current inventory: 112 units available [doc_08]
+✓ Report saved to outputs/report_20250607_141255.md
+```
+
+---
+
+## 🔒 Security Features
+
+* Input validation using **Pydantic**
+* Prevention of malformed order IDs
+* Maximum iteration limits for agents
+* Environment variables managed via `.env`
+* No hardcoded API keys
+* MCP communication over secure stdio channels
+
+---
+
+## 🧪 Testing
+
+```bash
+# Run unit tests
+python -m pytest tests/test_tools.py -v
+
+# Run end-to-end tests
+python -m pytest tests/test_e2e.py -v
+
+# Run all tests
+python -m pytest tests/ -v
+```
+
+---
+
+## 👨‍💻 Author
+
+**Kukati Shanmuk**
+
+B.Tech Computer Science Student passionate about AI, Data Science, and building practical solutions using Multi-Agent Systems and LLMs.
+
+---
