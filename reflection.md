@@ -10,10 +10,8 @@ but used a resource endpoint (docs://index) instead since listing is read-only a
 does not need to be an agent-callable tool.
 
 Two agents made more sense than one. When I tried a single agent it kept skipping
-tool calls and writing answers from its own training data. Splitting into Researcher
-and Writer enforced a clear contract: the Researcher must use tools and cite sources,
-the Writer can only use what the Researcher returned. That separation is what makes
-the answers trustworthy.
+tool calls and writing answers from its own training data.There are role specific agent
+each agent assigned to complete its role like the writer agent and the researcher agent.
 
 ## What broke first when connecting the crew to the server?
 
@@ -83,3 +81,6 @@ rotated automatically.
 And the model would need to be evaluated properly on a set of known questions with
 known answers before going anywhere near real customer data. The grounding is
 good enough for a demo but not for production.
+
+Team 
+Ankit and Shanmuk
