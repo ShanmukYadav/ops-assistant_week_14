@@ -176,8 +176,6 @@ python -m pytest tests/ -v
 
 ## 👨‍💻 Author
 
-**Kukati Shanmuk**
-
-B.Tech Computer Science Student passionate about AI, Data Science, and building practical solutions using Multi-Agent Systems and LLMs.
+**Team:** Shanmuk Kukati · Ankit Prashar
 
 ---
