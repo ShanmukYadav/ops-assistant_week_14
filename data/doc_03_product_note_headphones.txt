@@ -1,0 +1,8 @@
+Title: Product Note — ProSound X200 Headphones
+ID: doc_03
+
+The ProSound X200 is our best-selling wireless headphone.
+Battery life: 24 hours. Connectivity: Bluetooth 5.2.
+Compatible with iOS and Android. Noise cancellation: active.
+Known issue: firmware v1.2 causes audio dropout on iOS 17. Fix: update to v1.3.
+Warranty: 1 year from date of purchase. Replacement parts available on request.

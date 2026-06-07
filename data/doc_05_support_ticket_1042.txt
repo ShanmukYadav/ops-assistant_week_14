@@ -1,0 +1,11 @@
+Title: Support Ticket #1042
+ID: doc_05
+
+Customer: Priya Sharma
+Order ID: ORD-1042
+Date: 2024-11-03
+Issue: Customer received ProSound X200 headphones with audio dropout on iOS 17.
+       Firmware version confirmed as v1.2.
+Resolution: Support advised firmware update to v1.3 via the ProSound app.
+            Customer confirmed issue resolved on 2024-11-05.
+Status: Closed

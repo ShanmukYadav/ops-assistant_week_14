@@ -1,0 +1,10 @@
+Title: Support Ticket #1087
+ID: doc_06
+
+Customer: Arjun Mehta
+Order ID: ORD-1087
+Date: 2024-11-10
+Issue: MechType K80 keyboard has key chatter on the 'G' key.
+       Serial number: K80-B-12345 (within affected batch B-2023 range).
+Resolution: Replacement switch dispatched under warranty. No charge to customer.
+Status: Closed

@@ -1,0 +1,19 @@
+order_id,customer_name,product,quantity,unit_price,order_date,status,warehouse
+ORD-1001,Sneha Patel,ProSound X200 Headphones,1,89.99,2024-10-01,delivered,A
+ORD-1002,Rahul Gupta,MechType K80 Keyboard,1,74.99,2024-10-03,delivered,A
+ORD-1003,Ananya Singh,USB-C Charging Cable (2m),2,12.99,2024-10-05,delivered,B
+ORD-1004,Karan Verma,ProSound X200 Headphones,1,89.99,2024-10-08,returned,A
+ORD-1005,Divya Nair,MechType K80 Keyboard,2,74.99,2024-10-10,delivered,A
+ORD-1006,Rohit Joshi,USB-C Charging Cable (2m),1,12.99,2024-10-12,delivered,B
+ORD-1007,Meera Iyer,ProSound X200 Headphones,1,89.99,2024-10-15,delivered,A
+ORD-1008,Aditya Kumar,MechType K80 Keyboard,1,74.99,2024-10-18,cancelled,A
+ORD-1009,Pooja Reddy,USB-C Charging Cable (2m),3,12.99,2024-10-20,delivered,B
+ORD-1010,Vikram Shah,ProSound X200 Headphones,2,89.99,2024-10-22,delivered,A
+ORD-1011,Neha Jain,MechType K80 Keyboard,1,74.99,2024-10-25,returned,A
+ORD-1012,Suresh Pillai,USB-C Charging Cable (2m),2,12.99,2024-10-28,delivered,B
+ORD-1013,Kavya Rao,ProSound X200 Headphones,1,89.99,2024-11-01,delivered,A
+ORD-1042,Priya Sharma,ProSound X200 Headphones,1,89.99,2024-11-03,returned,A
+ORD-1087,Arjun Mehta,MechType K80 Keyboard,1,74.99,2024-11-10,warranty_claim,A
+ORD-1088,Fatima Sheikh,USB-C Charging Cable (2m),1,12.99,2024-11-12,delivered,B
+ORD-1089,Tanmay Bose,ProSound X200 Headphones,1,89.99,2024-11-14,pending,A
+ORD-1090,Lakshmi Menon,MechType K80 Keyboard,2,74.99,2024-11-15,pending,A

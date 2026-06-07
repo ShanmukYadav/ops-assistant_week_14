@@ -1,0 +1,10 @@
+Title: Escalation Policy
+ID: doc_07
+
+Tier 1 support handles all general inquiries and standard returns.
+Tier 2 is escalated when: (1) issue is unresolved after two contacts,
+(2) order value exceeds $500, or (3) customer requests manager callback.
+Tier 3 (engineering) is escalated for confirmed product defects affecting
+multiple customers. All escalations must be logged in the ticketing system
+with a reason code. Target response time for Tier 2: 4 business hours.
+Target response time for Tier 3: 1 business day.

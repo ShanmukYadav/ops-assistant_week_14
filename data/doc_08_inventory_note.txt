@@ -1,0 +1,11 @@
+Title: Inventory Note — November 2024
+ID: doc_08
+
+ProSound X200 Headphones: 142 units in warehouse A. 30 units reserved for
+pending orders. Reorder threshold: 50 units. Supplier lead time: 14 days.
+
+MechType K80 Keyboard: 87 units in warehouse A. 12 units reserved.
+Reorder threshold: 40 units. Supplier lead time: 21 days.
+
+USB-C Charging Cable (2m): 310 units in warehouse B. 5 units reserved.
+Reorder threshold: 100 units. Supplier lead time: 7 days.

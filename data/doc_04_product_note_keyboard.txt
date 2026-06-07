@@ -1,0 +1,9 @@
+Title: Product Note — MechType K80 Keyboard
+ID: doc_04
+
+The MechType K80 is a tenkeyless mechanical keyboard.
+Switch type: Cherry MX Red (linear). Backlight: RGB, 16 million colours.
+Compatible with Windows and macOS. Cable: detachable USB-C.
+Known issue: key chatter reported on units from batch B-2023. Affected serial
+range: K80-B-10000 to K80-B-14999. Resolution: replace switch (free under warranty).
+Warranty: 2 years from date of purchase.
